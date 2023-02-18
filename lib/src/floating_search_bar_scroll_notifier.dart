@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 /// A Widget that notifies a parent [FloatingSearchBar] about
@@ -41,6 +42,7 @@ class FloatingSearchBarScrollNotifier extends StatelessWidget {
               maxScrollExtent: metrics.maxScrollExtent,
               minScrollExtent: metrics.minScrollExtent,
               viewportDimension: metrics.viewportDimension,
+              devicePixelRatio: window.devicePixelRatio,
             );
           }
 
